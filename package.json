@@ -4,8 +4,16 @@
   "description": "my studies in tdd with js ",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslin src/*js",
+    "prepush": "npx npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yuri Gomes <yuurig@gmail.com> (http://github.com/met4tron)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "husky": "^0.14.3"
+  }
 }
